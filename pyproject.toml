@@ -1,0 +1,9 @@
+[project]
+name = "aslicer"
+version = "0.0.1"
+dependencies = [
+	"pydub==0.25.1"
+]
+
+[project.scripts]
+aslicer = "aslicer:main"

@@ -10,7 +10,7 @@ def help(code: int = None):
     Help message. Exit's with status `code` if not None.
     """
     print(
-        f"usage: python3 {sys.argv[0]} [options] sample1 sample2 ...", file=sys.stderr
+        f"usage: {sys.argv[0]} [options] sample1 sample2 ...", file=sys.stderr
     )
     print("-h/--help\t\tdisplay this help message")
     print(

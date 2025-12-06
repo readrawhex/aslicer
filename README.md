@@ -8,6 +8,8 @@ I've been using a DAW to do this manually for a while, thought I would save
 myself some time. This script should be able to process whatever filetypes `ffmpeg` 
 supports, according to `pydub` documentation.
 
+Install can be done by running `pipx install .`.
+
 ```bash
 usage: python3 aslicer.py [options] sample1 sample2 ...
 -h/--help		display this help message
