@@ -7,9 +7,6 @@ from pydub import AudioSegment
 
 
 def main():
-    keep_intro = False
-    output_format = "wav"
-    output_directory = None
     threshold = 3.0
 
     parser = argparse.ArgumentParser(description="audio slicer tool")
@@ -48,7 +45,7 @@ def main():
                 ratio = audio[i].rms / (baseline + 1e-9)
                 deriv = audio[i].rms - audio[i - 1].rms
                 if cool == 0:
-                    if ratio > threshold and deriv > maxDeriv:
+                    if ratio > args.threshold and deriv > maxDeriv:
                         transients.append(i)
                         cool = cooldown
                         print(
